@@ -45,9 +45,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp V  &commandtap LCTRL L  &commandtap LEFT_ALT H  &commandtap LEFT_WIN G  &kp Q             &kp J      &commandtap RIGHT_WIN F  &commandtap RIGHT_ALT O  &commandtap RIGHT_CONTROL U  &kp COMMA  &none
-&none  &kp S  &holdtap 3 R         &lt 2 N                 &lt 1 T                 &kp B             &kp Y      &holdtap 1 C             &holdtap 2 A             &holdtap 3 E                 &kp I      &none
-&none  &kp Z  &kp X                &kp M                   &kp D                   &kp K             &kp P      &kp W                    &kp APOSTROPHE           &kp DOT                      &kp FSLH   &none
+&kp A  &kp V  &commandtap LCTRL L  &commandtap LEFT_ALT H  &commandtap LEFT_WIN G  &kp Q             &kp J      &commandtap RIGHT_WIN F  &commandtap RIGHT_ALT O  &commandtap RIGHT_CONTROL U  &kp COMMA  &kp A
+&kp A  &kp S  &holdtap 3 R         &lt 2 N                 &lt 1 T                 &kp B             &kp Y      &holdtap 1 C             &holdtap 2 A             &holdtap 3 E                 &kp I      &kp A
+&kp A  &kp Z  &kp X                &kp M                   &kp D                   &kp K             &kp P      &kp W                    &kp APOSTROPHE           &kp DOT                      &kp FSLH   &kp A
                                    &kp LGUI                &kp BACKSPACE           &kp LEFT_SHIFT    &kp SPACE  &kp RETURN               &kp RALT
             >;
         };
