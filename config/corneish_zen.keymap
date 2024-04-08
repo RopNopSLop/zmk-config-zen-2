@@ -19,8 +19,16 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            hold-trigger-key-positions = <14 15 16 19 20 21 26 27 28 32 33 31>;
             flavor = "balanced";
+        };
+
+        commandtap: commandtap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "COMMANDTAP";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
         };
     };
 
@@ -37,10 +45,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp V  &kp L         &kp H     &kp G          &kp Q             &kp J      &kp F         &kp O           &kp U         &kp COMMA  &none
-&none  &kp S  &holdtap 3 R  &lt 2 N   &lt 1 T        &kp B             &kp Y      &holdtap 1 C  &holdtap 2 A    &holdtap 3 E  &kp I      &none
-&none  &kp Z  &kp X         &kp M     &kp D          &kp K             &kp P      &kp W         &kp APOSTROPHE  &kp DOT       &kp FSLH   &none
-                            &kp LGUI  &kp BACKSPACE  &kp LEFT_SHIFT    &kp SPACE  &kp RETURN    &kp RALT
+&none  &kp V  &commandtap LCTRL L  &commandtap LEFT_ALT H  &commandtap LEFT_WIN G  &kp Q             &kp J      &commandtap RIGHT_WIN F  &commandtap RIGHT_ALT O  &commandtap RIGHT_CONTROL U  &kp COMMA  &none
+&none  &kp S  &holdtap 3 R         &lt 2 N                 &lt 1 T                 &kp B             &kp Y      &holdtap 1 C             &holdtap 2 A             &holdtap 3 E                 &kp I      &none
+&none  &kp Z  &kp X                &kp M                   &kp D                   &kp K             &kp P      &kp W                    &kp APOSTROPHE           &kp DOT                      &kp FSLH   &none
+                                   &kp LGUI                &kp BACKSPACE           &kp LEFT_SHIFT    &kp SPACE  &kp RETURN               &kp RALT
             >;
         };
 
